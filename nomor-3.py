@@ -8,25 +8,31 @@ if x<-30 or x>30 or y<-30 or y>30:
 else:
     if x==0 and y==0:
         print("Titik berada di titik pusat dan tidak termasuk kuadran mana pun")
+    elif x==0 and y!=0:
+        posisi = "positif" if y>0 else "negatif"
+        print(f"Titik berada pada sumbu Y bagian {posisi}.")
+    elif y==0 and x!=0:
+        posisi = "positif" if x>0 else "negatif"
+        print(f"Titik berada pada sumbu X bagian {posisi}.")
     else:
         if x>0 and y>0:
-            fungsi = "x^2 + y^2"
+            fungsi = "f(x,y) = x^2 + y^2"
             hasil = (x**2) + (y**2)
-            posisi = 1
+            posisi = "Kuadran I"
         elif x<0 and y>0:
-            fungsi = "x^2 - y^2"
+            fungsi = "f(x,y) = x^2 - y^2"
             hasil = (x**2)-(y**2)
-            posisi = 2
+            posisi = "Kuadran II"
         elif x<0 and y<0:
-            fungsi = "2x + 3y"
+            fungsi = "f(x,y) = 2x + 3y"
             hasil = 2*x+3*y
-            posisi = 3
+            posisi = "Kuadran III"
         elif x>0 and y<0:
-            fungsi = "x^2 + 2y"
+            fungsi = "f(x,y) = x^2 + 2y"
             hasil = (x**2)+2*y
-            posisi = 4
+            posisi = "Kuadran IV"
         print("=== HASIL ANALISIS TITIK ===")
-        print(f"Koordinat = ({x},{y})")
-        print(f"Posisi = {posisi}")
-        print(f"Fungsi = {fungsi}")
-        print(f"Hasil = {hasil:.2f}")
+        print(f"Koordinat: ({x},{y})")
+        print(f"Posisi: {posisi}")
+        print(f"Fungsi: {fungsi}")
+        print(f"Hasil: {hasil:.2f}")
