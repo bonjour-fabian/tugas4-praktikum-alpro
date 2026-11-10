@@ -1,2 +1,2 @@
 # tugas4-praktikum-alpro
-ini cuma buat storage aja yaa..
+ini cuma buat tugas-4 alpro aja yaa
